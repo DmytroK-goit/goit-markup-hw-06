@@ -135,13 +135,7 @@ svg {
 
 .header-nav:hover {
   color: #404bbf;
-  /* border-bottom: solid 4px; */
 }
-
-/* .header-nav:active {
-  color: #404bbf;
-  text-decoration: underline;
-} */
 
 .header-address-ul {
   font-style: normal;
@@ -183,11 +177,9 @@ svg {
 .hero {
   background-color: var(--prime-color);
   padding: 188px 0;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(../images/people-office1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -364,8 +356,7 @@ svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-svg-link {
-}
+.our-team-svg-link {}
 
 .our-team-svg-link:hover {
   fill: #404bbf;
@@ -626,8 +617,8 @@ svg {
   height: 100%;
   z-index: 999;
   display: flex;
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-overlay.is-open {
@@ -791,7 +782,8 @@ svg {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 40px;
 }
-.lable-input:hover + svg {
+
+.lable-input:hover+svg {
   fill: #404bbf;
 }
 
@@ -802,7 +794,8 @@ svg {
 .lable-input:focus {
   border-color: #4d5ae5;
 }
-.lable-input:focus + svg {
+
+.lable-input:focus+svg {
   fill: #4d5ae5;
 }
 
@@ -817,11 +810,12 @@ svg {
   align-items: center; */
 }
 
-.policy-input-chekbox:checked + .prive-policy-text span {
+.policy-input-chekbox:checked+.prive-policy-text span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
+
 .prive-policy-span {
   display: inline-flex;
   align-items: center;
@@ -841,4 +835,150 @@ svg {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+
+}
+
+
+/* ------------------------Mobile------------------------------- */
+@media screen and (min-width: 320px) and (max-width:767px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+  }
+
+  .mobile-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .hero .container {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-h-main {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    background-color: var(--prime-color);
+    padding: 188px 0;
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office1.jpg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    max-width: 320px;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  .hero-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #4d5ae5;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    margin-top: 72px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .advanteges-ul {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .advanteges-li {
+    width: 100%;
+  }
+
+  .advanteges-h {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--prime-color);
+  }
+
+  .advanteges-p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+  }
+
+  .our-team-ul {
+    flex-direction: column;
+  }
+
+  .our-team-li {
+    width: 100%;
+  }
+
+  .our-team-li img {
+    width: 100%;
+  }
+
+  .our-team-ul {
+    flex-direction: column;
+  }
+
+  .our-portfolio-li {
+    width: 100%;
+  }
+
+  .footer .container,
+  .form-subbscribe {
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .footer-first-div,
+  .footer-second-div,
+  {
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.form-subbscribe {
+  align-items: center;
+}
+
+.form-subbscribe-lable {
+  margin: 0 auto;
+}
 }
