@@ -956,41 +956,50 @@ svg {
     width: 100%;
   }
 
+  .footer-mobile {
+    padding: 96px 16px;
+    align-items: center;
+    align-content: center;
+    max-height: 664px;
+  }
+
   .footer .container {
     flex-direction: column;
     gap: 24px;
-    margin-right: auto;
-    margin-left: auto;
   }
 
   .footer-first-div,
   .footer-second-div {
-    margin-right: 0;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
+    margin: 0 auto;
   }
 
-  .form-subbscribe {
-    display: inline-block;
+  .footer-social-h {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
-
-
+  .footer-subbscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
   }
 
   .footer-sub-btn {
     margin-top: 16px;
-    margin-right: auto;
-    margin-left: auto;
-    /* margin: 0 a
-    auto; */
+    margin-bottom: 96px;
   }
 
-  .footer-logo,
-  .footer-social-h {
+  .footer-logo {
     display: flex;
     justify-content: center;
+  }
+
+  .form-subbscribe {
+    flex-direction: column;
+    text-align: center;
+    max-width: none;
   }
 }
