@@ -177,11 +177,9 @@ svg {
 .hero {
   background-color: var(--prime-color);
   padding: 188px 0;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(../images/people-office1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -358,8 +356,7 @@ svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-svg-link {
-}
+.our-team-svg-link {}
 
 .our-team-svg-link:hover {
   fill: #404bbf;
@@ -786,7 +783,7 @@ svg {
   height: 40px;
 }
 
-.lable-input:hover + svg {
+.lable-input:hover+svg {
   fill: #404bbf;
 }
 
@@ -798,7 +795,7 @@ svg {
   border-color: #4d5ae5;
 }
 
-.lable-input:focus + svg {
+.lable-input:focus+svg {
   fill: #4d5ae5;
 }
 
@@ -813,7 +810,7 @@ svg {
   align-items: center; */
 }
 
-.policy-input-chekbox:checked + .prive-policy-text span {
+.policy-input-chekbox:checked+.prive-policy-text span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -881,11 +878,9 @@ svg {
   .hero {
     background-color: var(--prime-color);
     padding: 188px 0;
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url(../images/people-office1.jpg);
     background-repeat: no-repeat;
     background-size: auto auto;
@@ -964,21 +959,38 @@ svg {
   .footer .container {
     flex-direction: column;
     gap: 24px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .footer-first-div,
   .footer-second-div {
-    margin: 0 auto;
-    text-align: center;
+    margin-right: 0;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
   }
 
   .form-subbscribe {
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
+    display: inline-block;
+
+
+
   }
 
-  .form-subbscribe-lable {
-    margin: 0 auto;
+  .footer-sub-btn {
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin: 0 a
+    auto; */
+  }
+
+  .footer-logo,
+  .footer-social-h {
+    display: flex;
+    justify-content: center;
   }
 }
