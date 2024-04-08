@@ -113,6 +113,22 @@ svg {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-visually-hidden-menu {
+  /* position: relative;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .current {
   position: relative;
   color: #404bbf;
@@ -859,9 +875,22 @@ svg {
     overflow: hidden;
   }
 
+  .menu-mobile {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu-mobile-link:hover {
+    fill: #4d5ae5;
+  }
+
   .hero .container {
     text-align: center;
     justify-content: center;
+  }
+
+  .logo {
+    margin-right: 149px;
   }
 
   .hero-h-main {
