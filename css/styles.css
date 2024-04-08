@@ -177,11 +177,9 @@ svg {
 .hero {
   background-color: var(--prime-color);
   padding: 188px 0;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(../images/people-office1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -358,8 +356,7 @@ svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-svg-link {
-}
+.our-team-svg-link {}
 
 .our-team-svg-link:hover {
   fill: #404bbf;
@@ -786,7 +783,7 @@ svg {
   height: 40px;
 }
 
-.lable-input:hover + svg {
+.lable-input:hover+svg {
   fill: #404bbf;
 }
 
@@ -798,7 +795,7 @@ svg {
   border-color: #4d5ae5;
 }
 
-.lable-input:focus + svg {
+.lable-input:focus+svg {
   fill: #4d5ae5;
 }
 
@@ -813,7 +810,7 @@ svg {
   align-items: center; */
 }
 
-.policy-input-chekbox:checked + .prive-policy-text span {
+.policy-input-chekbox:checked+.prive-policy-text span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -870,29 +867,30 @@ svg {
   .hero-h-main {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
-    max-width: 496px;
+    max-width: 216px;
     margin: 0 auto;
+
   }
 
   .hero {
     background-color: var(--prime-color);
     padding: 188px 0;
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url(../images/people-office1.jpg);
     background-repeat: no-repeat;
-    background-size: auto auto;
+    background-size: cover;
     max-width: 320px;
+    height: 432px;
     background-position: center;
     margin: 0 auto;
+    padding-top: 72px;
   }
 
   .hero-button {
@@ -914,7 +912,7 @@ svg {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .advanteges-ul {
+  .advanteges .container ul {
     flex-direction: column;
     gap: 72px;
   }
@@ -961,20 +959,24 @@ svg {
   .our-portfolio-li {
     width: 100%;
   }
+
   .footer {
     padding: 0;
   }
 
   .footer-mobile {
-    align-items: center;
+
     /* height: 664px; */
-    padding-top: 96;
+    /* padding-top: 96; */
+    /* padding-top: 96px;
+    padding-bottom: 96px; */
   }
 
   .footer-mobile .container-mobile {
     flex-direction: column;
-    gap: 24px;
-    align-items: normal;
+    align-items: center;
+    gap: 72px;
+
     height: 664px;
   }
 
@@ -982,6 +984,7 @@ svg {
     margin: 0 auto;
     padding: 0;
   }
+
   .footer-first-div {
     padding-top: 96px;
     margin: 0 auto;
@@ -999,12 +1002,15 @@ svg {
     justify-content: center;
     align-items: center;
   }
+
   .footer-subbscribe-h {
     margin-bottom: 16px;
   }
+
   .form-subbscribe-lable {
     margin-bottom: 16px;
   }
+
   .footer-sub-btn {
     height: 40px;
   }
