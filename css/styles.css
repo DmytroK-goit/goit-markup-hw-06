@@ -1054,4 +1054,30 @@ svg {
     align-items: center;
     gap: 16px;
   }
+
+  /* ________________mobile menu__________________ */
+  .container-modile {
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-nav {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: var(--prime-color);
+  }
+
+  .container-modile .header-nav-ul {
+    flex-direction: column;
+  }
+
+  .container-modile .header-nav-ul a {
+    padding: 0;
+  }
+
+
 }
