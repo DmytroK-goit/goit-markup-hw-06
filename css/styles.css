@@ -859,7 +859,7 @@ svg {
     width: 320px;
     height: auto;
     margin: 0 auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
   }
 
   .mobile-visually-hidden {
@@ -1104,6 +1104,18 @@ svg {
   .modal {
     width: 288px;
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    width: 768px;
+    height: auto;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+  }
 
+  .header .header-address {
+    display: flex;
+    flex-direction: column;
+  }
 }
