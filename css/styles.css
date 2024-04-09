@@ -1056,7 +1056,7 @@ svg {
   }
 
   /* ________________mobile menu__________________ */
-  .container-modile {
+  .container-mobile {
     width: 320px;
     height: auto;
     display: flex;
@@ -1071,12 +1071,38 @@ svg {
     color: var(--prime-color);
   }
 
-  .container-modile .header-nav-ul {
+  .container-mobile .header-nav-ul {
     flex-direction: column;
   }
 
-  .container-modile .header-nav-ul a {
+  .container-mobile .header-nav-ul a {
     padding: 0;
+  }
+
+  .mobile-menu .container-mobile {
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .mobile-menu .container-mobile .header-nav-ul {
+    margin-bottom: 168px;
+  }
+
+  .mobile-menu .container-mobile .footer-svg {
+    justify-content: space-between;
+  }
+
+  .mobile-menu .container-mobile .header-address-ul {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  /* -------------------------MODAL------------------------------- */
+  .modal {
+    width: 288px;
   }
 
 
