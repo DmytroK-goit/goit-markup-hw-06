@@ -1114,8 +1114,9 @@ svg {
     /* padding: 0 15px; */
   }
 
-  .header .header-address {
+  .header .header-address-ul {
     display: flex;
     flex-direction: column;
+    gap: 12px;
   }
 }
