@@ -1149,4 +1149,32 @@ svg {
     width: 356px;
     /* height: 120px; */
   }
+
+  .our-team .our-team-ul {
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    padding: 72px 108px 96px 108px;
+
+  }
+
+  .our-team .our-team-li {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .our-team .our-team-li img {
+    width: 100%;
+  }
+
+  .our-portfolio .our-team-ul {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .our-portfolio .our-portfolio-li {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .our-portfolio .our-portfolio-li img {
+    width: 100%;
+  }
 }
