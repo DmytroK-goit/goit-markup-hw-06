@@ -1119,4 +1119,34 @@ svg {
     flex-direction: column;
     gap: 12px;
   }
+
+  .mobile-visually-hidden-adv {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .advanteges {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .advanteges .advanteges-ul {
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* width: calc((100% - 24px) / 2); */
+
+  }
+
+  .advanteges .advanteges-li {
+    width: 356px;
+    /* height: 120px; */
+  }
 }
