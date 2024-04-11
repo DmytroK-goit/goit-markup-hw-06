@@ -906,21 +906,6 @@ svg {
 
   }
 
-  .hero {
-    background-color: var(--prime-color);
-    padding: 188px 0;
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/people-office1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 320px;
-    height: 432px;
-    background-position: center;
-    margin: 0 auto;
-    padding-top: 72px;
-  }
 
   .hero-button {
     display: block;
@@ -967,6 +952,19 @@ svg {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-color);
+  }
+
+  .mobile-visually-hidden-adv {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
   .our-team-ul {
@@ -1194,5 +1192,15 @@ svg {
     padding-top: 96px;
     padding-left: 108px;
     padding-bottom: 96px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office2x.jpg);
+
   }
 }
