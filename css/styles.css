@@ -859,7 +859,7 @@ svg {
     width: 320px;
     height: auto;
     margin: 0 auto;
-    /* padding: 0 15px; */
+
   }
 
   .mobile-visually-hidden {
@@ -905,7 +905,6 @@ svg {
     margin: 0 auto;
 
   }
-
 
   .hero-button {
     display: block;
@@ -991,13 +990,7 @@ svg {
     padding: 0;
   }
 
-  .footer-mobile {
 
-    /* height: 664px; */
-    /* padding-top: 96; */
-    /* padding-top: 96px;
-    padding-bottom: 96px; */
-  }
 
   .footer-mobile .container-mobile {
     flex-direction: column;
@@ -1104,12 +1097,18 @@ svg {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+
+
+/* ____________________________________________________________ */
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
   .container {
     width: 768px;
     height: auto;
     margin: 0 auto;
-
   }
 
   .header .header-address-ul {
@@ -1137,15 +1136,11 @@ svg {
   }
 
   .advanteges .advanteges-ul {
-
     flex-wrap: wrap;
-
-
   }
 
   .advanteges .advanteges-li {
     width: 356px;
-
   }
 
   .our-team .our-team-ul {
@@ -1201,6 +1196,5 @@ svg {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
       url(../images/people-office2x.jpg);
-
   }
 }
