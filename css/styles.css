@@ -1111,7 +1111,7 @@ svg {
     width: 768px;
     height: auto;
     margin: 0 auto;
-    /* padding: 0 15px; */
+
   }
 
   .header .header-address-ul {
@@ -1139,15 +1139,15 @@ svg {
   }
 
   .advanteges .advanteges-ul {
-    /* flex-direction: row; */
+
     flex-wrap: wrap;
-    /* width: calc((100% - 24px) / 2); */
+
 
   }
 
   .advanteges .advanteges-li {
     width: 356px;
-    /* height: 120px; */
+
   }
 
   .our-team .our-team-ul {
@@ -1176,5 +1176,23 @@ svg {
 
   .our-portfolio .our-portfolio-li img {
     width: 100%;
+
+  }
+
+  .footer-first-div {
+    margin-right: 24px;
+  }
+
+  .footer {
+    padding: 0;
+  }
+
+  .container-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-top: 96px;
+    padding-left: 108px;
+    padding-bottom: 96px;
   }
 }
