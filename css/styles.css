@@ -858,11 +858,31 @@ svg {
   .container {
     width: 320px;
     height: auto;
-    margin: 0 auto;
 
   }
 
-  .mobile-visually-hidden {
+  .header {
+    padding: 17px 0;
+  }
+
+  .mobile-visually-hidden-menu {
+    /* position: relative;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: fixed; */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    opacity: 0;
+    pointer-events: none; */
+    display: block;
+  }
+
+  /* .mobile-visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -873,11 +893,18 @@ svg {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  } */
+
+  .header-nav-ul,
+  .header-address-ul {
+    display: none;
   }
 
   .menu-mobile {
     opacity: 1;
     pointer-events: auto;
+    border: none;
+    background-color: transparent;
   }
 
   .menu-mobile-link:hover {
@@ -1054,6 +1081,10 @@ svg {
     flex-direction: column;
   }
 
+  .mobile-menu {
+    padding: 72px 16px 40px;
+  }
+
   .header-nav {
     font-weight: 700;
     font-size: 36px;
@@ -1062,22 +1093,23 @@ svg {
     color: var(--prime-color);
   }
 
-  .container-mobile .header-nav-ul {
+  .menu-nav-ul {
+    margin-bottom: auto;
+  }
+
+  .container-mobile .menu-address-ul {
     flex-direction: column;
   }
 
-  .container-mobile .header-nav-ul a {
+  .container-mobile .menu-address-ul a {
     padding: 0;
   }
 
   .mobile-menu .container-mobile {
-    margin-top: 72px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+    margin: auto;
   }
 
-  .mobile-menu .container-mobile .header-nav-ul {
+  .mobile-menu .container-mobile .menu-address-ul {
     margin-bottom: 168px;
   }
 
@@ -1085,16 +1117,17 @@ svg {
     justify-content: space-between;
   }
 
-  .mobile-menu .container-mobile .header-address-ul {
+  .mobile-menu .container-mobile .menu-address-ul {
     flex-direction: column;
     gap: 24px;
     margin-bottom: 48px;
   }
 
+
   /* -------------------------MODAL------------------------------- */
-  .modal {
+  /* .modal {
     width: 288px;
-  }
+  } */
 }
 
 
@@ -1192,7 +1225,7 @@ svg {
   .hero {
     background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+        rgba(6, 6, 7, 0.7)),
       url(../images/people-office2x.jpg);
   }
 }
