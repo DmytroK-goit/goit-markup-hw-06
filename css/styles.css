@@ -51,6 +51,7 @@ svg {
   margin: 0;
   padding: 0;
 }
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -62,6 +63,7 @@ svg {
   .container {
     width: 320px;
   }
+
   .header {
     padding: 17px 16px;
     border-bottom: 1px solid #e7e9fc;
@@ -82,8 +84,7 @@ svg {
     align-items: center;
   }
 
-  .header-address {
-  }
+  .header-address {}
 
   .header-nav-ul {
     display: none;
@@ -115,11 +116,13 @@ svg {
     color: var(--prime-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .menu-mobile {
     border: none;
     background-color: none;
     margin-left: auto;
   }
+
   /* .mobile-visually-hidden-menu {
     top: 0;
     left: 0;
@@ -160,9 +163,11 @@ svg {
     display: flex;
     gap: 40px;
   }
+
   .header-address {
     display: none;
   }
+
   .header-address-li {
     color: var(--second-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -201,11 +206,9 @@ svg {
   .hero {
     background-color: var(--prime-color);
 
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url(../images/people-office1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,6 +271,7 @@ svg {
     margin-left: auto;
     margin-right: auto;
   }
+
   .advanteges-ul {
     display: flex;
     flex-direction: column;
@@ -319,15 +323,19 @@ svg {
     flex-direction: column;
     gap: 48px;
   }
+
   .our-team-li img {
     display: block;
   }
+
   .our-team-li-border .advanteges-h {
     text-align: left;
   }
+
   .our-team-li-border .advanteges-p {
     font-weight: 400;
   }
+
   .our-team-li-border {
     padding: 32px 0;
   }
@@ -382,6 +390,7 @@ svg {
     width: 40px;
     height: 40px;
   }
+
   .our-team .advanteges-h {
     font-weight: 500;
     font-size: 20px;
@@ -413,8 +422,7 @@ svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .our-team-svg-link {
-  }
+  .our-team-svg-link {}
 
   .our-team-svg-link:hover {
     fill: #404bbf;
@@ -456,8 +464,7 @@ svg {
     line-height: 1.2;
   }
 
-  .our-portfolio p {
-  }
+  .our-portfolio p {}
 
   .our-team-li-border {
     border-bottom: 1px solid #e7e9fc;
@@ -513,17 +520,19 @@ svg {
   }
 
   /* footer */
-  .footer .container {
+  .footer .container-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 96px 0;
+    padding: 96px 16px;
+    width: 320px;
     /* align-items: baseline; */
   }
 
-  .footer {
+  .footer-mobile {
     background-color: var(--prime-color);
     margin: 0 auto;
+    width: 320px;
   }
 
   .footer-logo {
@@ -613,6 +622,10 @@ svg {
   }
 
   /* subscribe */
+  .footer-subbscribe {
+    width: 100%;
+
+  }
 
   .footer-subbscribe-email {
     width: 288px;
@@ -629,27 +642,26 @@ svg {
   }
 
   .form-subbscribe {
+    width: 100%;
     display: flex;
     flex-direction: column;
-
     gap: 24px;
     background-color: transparent;
     border: none;
     box-shadow: none;
-    padding: 0;
-    margin: 0;
-    max-height: 40px;
     max-width: 40px;
+
+
   }
 
   .footer-sub-btn {
+
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     border: none;
-    padding: 8px 24px;
+    /* padding: 8px 24px; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -658,13 +670,9 @@ svg {
     background-color: #4d5ae5;
     gap: 8px;
     cursor: pointer;
-    min-width: 165px;
+    width: 165px;
     height: 40px;
-  }
-
-  .footer-sub-btn-svg {
-    margin-left: 16px;
-    height: 40px;
+    margin: 0 auto;
   }
 
   /* < !-- overlay --> */
@@ -846,7 +854,7 @@ svg {
     height: 40px;
   }
 
-  .lable-input:hover + svg {
+  .lable-input:hover+svg {
     fill: #404bbf;
   }
 
@@ -858,7 +866,7 @@ svg {
     border-color: #4d5ae5;
   }
 
-  .lable-input:focus + svg {
+  .lable-input:focus+svg {
     fill: #4d5ae5;
   }
 
@@ -871,7 +879,7 @@ svg {
     line-height: 1.17;
   }
 
-  .policy-input-chekbox:checked + .prive-policy-text span {
+  .policy-input-chekbox:checked+.prive-policy-text span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -898,6 +906,7 @@ svg {
     color: #4d5ae5;
   }
 }
+
 @media screen and (min-width: 768px) {
   .header {
     border-bottom: 1px solid #e7e9fc;
@@ -1022,11 +1031,9 @@ svg {
   .hero {
     background-color: var(--prime-color);
     padding: 188px 0;
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url(../images/people-office1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1203,8 +1210,7 @@ svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .our-team-svg-link {
-  }
+  .our-team-svg-link {}
 
   .our-team-svg-link:hover {
     fill: #404bbf;
@@ -1245,8 +1251,7 @@ svg {
     line-height: 1.2;
   }
 
-  .our-portfolio p {
-  }
+  .our-portfolio p {}
 
   .our-team-li-border {
     border-bottom: 1px solid #e7e9fc;
@@ -1625,7 +1630,7 @@ svg {
     height: 40px;
   }
 
-  .lable-input:hover + svg {
+  .lable-input:hover+svg {
     fill: #404bbf;
   }
 
@@ -1637,7 +1642,7 @@ svg {
     border-color: #4d5ae5;
   }
 
-  .lable-input:focus + svg {
+  .lable-input:focus+svg {
     fill: #4d5ae5;
   }
 
@@ -1650,7 +1655,7 @@ svg {
     line-height: 1.17;
   }
 
-  .policy-input-chekbox:checked + .prive-policy-text span {
+  .policy-input-chekbox:checked+.prive-policy-text span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -1677,8 +1682,9 @@ svg {
     color: #4d5ae5;
   }
 }
-@media screen and (max-width: 1157px) {
-}
+
+@media screen and (max-width: 1157px) {}
+
 @media screen and (min-width: 1158px) {
   .header {
     border-bottom: 1px solid #e7e9fc;
@@ -1803,11 +1809,9 @@ svg {
   .hero {
     background-color: var(--prime-color);
     padding: 188px 0;
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url(../images/people-office1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1984,8 +1988,7 @@ svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .our-team-svg-link {
-  }
+  .our-team-svg-link {}
 
   .our-team-svg-link:hover {
     fill: #404bbf;
@@ -2026,8 +2029,7 @@ svg {
     line-height: 1.2;
   }
 
-  .our-portfolio p {
-  }
+  .our-portfolio p {}
 
   .our-team-li-border {
     border-bottom: 1px solid #e7e9fc;
@@ -2406,7 +2408,7 @@ svg {
     height: 40px;
   }
 
-  .lable-input:hover + svg {
+  .lable-input:hover+svg {
     fill: #404bbf;
   }
 
@@ -2418,7 +2420,7 @@ svg {
     border-color: #4d5ae5;
   }
 
-  .lable-input:focus + svg {
+  .lable-input:focus+svg {
     fill: #4d5ae5;
   }
 
@@ -2431,7 +2433,7 @@ svg {
     line-height: 1.17;
   }
 
-  .policy-input-chekbox:checked + .prive-policy-text span {
+  .policy-input-chekbox:checked+.prive-policy-text span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
