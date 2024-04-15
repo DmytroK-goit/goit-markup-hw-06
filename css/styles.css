@@ -622,10 +622,6 @@ svg {
   }
 
   /* subscribe */
-  .footer-subbscribe {
-    width: 100%;
-
-  }
 
   .footer-subbscribe-email {
     width: 288px;
@@ -649,8 +645,6 @@ svg {
     background-color: transparent;
     border: none;
     box-shadow: none;
-    max-width: 40px;
-
 
   }
 
