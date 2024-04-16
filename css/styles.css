@@ -1607,8 +1607,8 @@ svg {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 288px;
-    min-height: 623px;
+    width: 408px;
+    min-height: 584px;
     padding: 72px 24px 24px 24px;
   }
 
@@ -1812,95 +1812,40 @@ svg {
     display: flex;
     flex-direction: column; */
   }
-
-  /* _______________mobile-menu_________________________ */
-  .mobile-menu {
-    position: relative;
-    background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .mobile-menu.is-open {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .mobile-menu .container-mobile {
-    width: 100%;
-    height: 100%;
-    padding: 72px 24px 40px 16px;
-    display: flex;
-    flex-direction: column;
-  }
-  .mobile-menu .container-mobile .menu-nav-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .mobile-menu .container-mobile .menu-nav-ul a {
-    padding: 0;
-  }
-  .header-nav-menu {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: var(--prime-color);
-  }
-
-  .menu-nav-ul {
-    margin-bottom: auto;
-  }
-
-  .container-mobile .menu-address-ul {
-    flex-direction: column;
-  }
-
-  .container-mobile .menu-address-ul a {
-    padding: 0;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-  }
-
-  .mobile-menu .container-mobile {
-  }
-
-  .mobile-menu .container-mobile .menu-address-ul {
-  }
-
-  .mobile-menu .container-mobile .footer-svg {
-    justify-content: space-between;
-  }
-
-  .mobile-menu .container-mobile .menu-address-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 48px;
-  }
-  .menu-svg {
-    display: flex;
-    gap: 40px;
-  }
-  .menu-svg-link {
-    fill: #4d5ae5;
-  }
-}
-
-@media screen and (max-width: 1157px) {
 }
 
 @media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+
+  .header-address-ul {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-address-li {
+    font-size: 16px;
+  }
+  .hero .container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .advanteges-svg {
+    padding: 24px 100px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .advanteges-ul {
+    flex-wrap: nowrap;
+  }
 }
