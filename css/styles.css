@@ -1816,6 +1816,7 @@ svg {
 
 @media screen and (min-width: 1158px) {
   .container {
+    margin: 0 auto;
     width: 1158px;
   }
   .logo {
@@ -1832,6 +1833,9 @@ svg {
   .hero .container {
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+  .advanteges .container {
+    width: 1128px;
   }
   .advanteges-svg {
     padding: 24px 100px;
