@@ -906,13 +906,13 @@ svg {
     height: 100%;
     z-index: 999;
     display: flex;
-    opacity: 1;
-    pointer-events: auto;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .mobile-menu.is-open {
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .mobile-menu .container-mobile {
