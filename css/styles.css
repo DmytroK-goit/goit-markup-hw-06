@@ -1162,7 +1162,7 @@ svg {
       url(../images/people-office-tab.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     background-position: center;
     margin: 0 auto;
     padding: 112px 0;
@@ -1213,7 +1213,7 @@ svg {
   }
 
   .advanteges .container {
-    width: 736px;
+    /* width: 736px; */
     margin: 0 auto;
   }
 
@@ -1931,7 +1931,7 @@ svg {
   }
 
   .advanteges {
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
   }
 
   .advanteges .container {
@@ -1971,7 +1971,7 @@ svg {
 
   .our-team {
     padding: 120px 0;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
   }
 
   .our-team .container {
@@ -1983,7 +1983,7 @@ svg {
   }
 
   .our-portfolio {
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
   }
 
   .our-portfolio-ul {
