@@ -51,7 +51,10 @@
             </li>
           </ul>
         </address>
-        <button class="mobile-visually-hidden-menu menu-mobile" type="submit">
+        <button
+          class="mobile-visually-hidden-menu menu-mobile js-open-menu"
+          type="submit"
+        >
           <svg class="menu-mobile-link" width="17" height="15">
             <use href="./images/icons.svg#icon-Group"></use>
           </svg>
@@ -301,7 +304,7 @@
         </div>
       </section>
       <!-- our portfolio -->
-      <section class="our-portfolio">
+      <section id="portfolio" class="our-portfolio">
         <div class="container">
           <h2 class="our-team-main-h">Our Portfolio</h2>
           <ul class="our-team-ul our-portfolio-ul">
@@ -739,8 +742,8 @@
       </div>
     </div>
     <!-- mobile menu -->
-    <div class="mobile-menu modal-overlay">
-      <button class="form-btn-cloth" type="button">
+    <div class="mobile-menu modal-overlay js-menu-container">
+      <button class="form-btn-cloth js-close-menu" type="button">
         <svg class="form-btn-cloth-svg" width="8" height="8">
           <use
             class="btn-cloth-vektor"
@@ -753,7 +756,11 @@
           <li>
             <a class="header-nav-menu menu-lable" href="./index.html">Studio</a>
           </li>
-          <li><a class="header-nav-menu" href="">Portfolio</a></li>
+          <li>
+            <a class="header-nav-menu mobile-modal-link" href="#portfolio"
+              >Portfolio</a
+            >
+          </li>
           <li><a class="header-nav-menu" href="">Contacts</a></li>
         </ul>
         <div class="menu-address">
@@ -799,5 +806,12 @@
       </div>
     </div>
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/mob-menu.js" type="module"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
