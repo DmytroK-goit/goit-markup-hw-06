@@ -3,6 +3,10 @@
   --second-color: #434455;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -197,11 +201,9 @@ svg {
 
   .hero {
     background-color: var(--prime-color);
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url(../images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,13 +213,12 @@ svg {
     padding: 72px 0;
   }
 
-  @media screen and(min-resolution: 2dppx), (min-resolution: 2dppx) {
+  @media screen and(min-resolution: 2dppx),
+  (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(
-          to bottom,
+      background-image: linear-gradient(to bottom,
           rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
+          rgba(46, 47, 66, 0.7)),
         url(../images/people-office-mob2x.jpg);
     }
   }
@@ -456,8 +457,7 @@ svg {
     line-height: 1.2;
   }
 
-  .our-portfolio p {
-  }
+  .our-portfolio p {}
 
   .our-team-li-border {
     border-bottom: 1px solid #e7e9fc;
@@ -580,6 +580,7 @@ svg {
     width: 40px;
     height: 40px;
   }
+
   .footer-svg-a {
     width: 100%;
     height: 100%;
@@ -590,6 +591,7 @@ svg {
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .footer-svg-link {
     fill: #fff;
   }
@@ -837,7 +839,7 @@ svg {
     height: 40px;
   }
 
-  .lable-input:hover + svg {
+  .lable-input:hover+svg {
     fill: #404bbf;
   }
 
@@ -849,7 +851,7 @@ svg {
     border-color: #4d5ae5;
   }
 
-  .lable-input:focus + svg {
+  .lable-input:focus+svg {
     fill: #4d5ae5;
   }
 
@@ -862,7 +864,7 @@ svg {
     line-height: 1.17;
   }
 
-  .policy-input-chekbox:checked + .prive-policy-text span {
+  .policy-input-chekbox:checked+.prive-policy-text span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -943,9 +945,11 @@ svg {
     letter-spacing: 0.02em;
     color: #2e2f42;
   }
+
   .menu-lable {
     color: #404bbf;
   }
+
   .header-nav-menu:focus,
   .header-nav-menu:hover {
     color: #404bbf;
@@ -967,11 +971,9 @@ svg {
     letter-spacing: 0.02em;
   }
 
-  .mobile-menu .container-mobile {
-  }
+  .mobile-menu .container-mobile {}
 
-  .mobile-menu .container-mobile .menu-address-ul {
-  }
+  .mobile-menu .container-mobile .menu-address-ul {}
 
   .mobile-menu .container-mobile .footer-svg {
     justify-content: space-between;
@@ -1154,11 +1156,9 @@ svg {
   .hero {
     background-color: var(--prime-color);
 
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url(../images/people-office-tab.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1168,13 +1168,12 @@ svg {
     padding: 112px 0;
   }
 
-  @media screen and(min-resolution: 2dppx), (min-resolution: 2dppx) {
+  @media screen and(min-resolution: 2dppx),
+  (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(
-          to bottom,
+      background-image: linear-gradient(to bottom,
           rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
+          rgba(46, 47, 66, 0.7)),
         url(../images/people-office-tab2x.jpg);
     }
   }
@@ -1416,8 +1415,7 @@ svg {
     line-height: 1.2;
   }
 
-  .our-portfolio p {
-  }
+  .our-portfolio p {}
 
   .our-team-li-border {
     border-bottom: 1px solid #e7e9fc;
@@ -1476,6 +1474,7 @@ svg {
   .footer {
     padding: 96px 0;
   }
+
   .footer .container-mobile {
     display: flex;
     flex-wrap: wrap;
@@ -1518,8 +1517,7 @@ svg {
     color: #f4f4fd;
   }
 
-  .footer-first-div {
-  }
+  .footer-first-div {}
 
   .footer-p {
     color: #f4f4fd;
@@ -1545,6 +1543,7 @@ svg {
     width: 40px;
     height: 40px;
   }
+
   .footer-svg-a {
     width: 100%;
     height: 100%;
@@ -1555,6 +1554,7 @@ svg {
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .footer-svg-link {
     fill: #fff;
   }
@@ -1827,7 +1827,7 @@ svg {
     height: 40px;
   }
 
-  .lable-input:hover + svg {
+  .lable-input:hover+svg {
     fill: #404bbf;
   }
 
@@ -1839,7 +1839,7 @@ svg {
     border-color: #4d5ae5;
   }
 
-  .lable-input:focus + svg {
+  .lable-input:focus+svg {
     fill: #4d5ae5;
   }
 
@@ -1852,7 +1852,7 @@ svg {
     line-height: 1.17;
   }
 
-  .policy-input-chekbox:checked + .prive-policy-text span {
+  .policy-input-chekbox:checked+.prive-policy-text span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -1907,21 +1907,18 @@ svg {
   }
 
   .hero {
-    background-image: linear-gradient(
-        to bottom,
+    background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+        rgba(46, 47, 66, 0.7)),
       url(../images/people-office1.jpg);
   }
 
-  @media screen and(min-resolution: 2dppx), (min-resolution: 2dppx) {
+  @media screen and(min-resolution: 2dppx),
+  (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(
-          to bottom,
+      background-image: linear-gradient(to bottom,
           rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
+          rgba(46, 47, 66, 0.7)),
         url(../images/people-office2x.jpg);
     }
   }
